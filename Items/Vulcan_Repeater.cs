@@ -26,7 +26,6 @@ namespace Console_Port_Mod.Items
             item.shoot = 1; //idk why but all the guns in the vanilla source have this
             item.shootSpeed = 14f;
             item.useAmmo = 40;
-            item.autoReuse = true;
         }
 
         public override void AddRecipes()  //How to craft this gun
@@ -38,14 +37,10 @@ namespace Console_Port_Mod.Items
             recipe.AddRecipe();
 
         }
-        /*public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+        public override void Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {
-            if(type == ProjectileID.WoodenArrowFriendly)
-            {
-                type = ProjectileID.ExplosiveBullet;
-            }
-            return true;
-        }*/
+
+        }
 
     }
 
