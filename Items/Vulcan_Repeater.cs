@@ -23,9 +23,9 @@ namespace Console_Port_Mod.Items
             item.rare = 2;
             item.UseSound = SoundID.DD2_BallistaTowerShot;
             item.autoReuse = false;
-            item.shoot = 278; //idk why but all the guns in the vanilla source have this
+            item.shoot = 1; //idk why but all the guns in the vanilla source have this
             item.shootSpeed = 14f;
-            item.useAmmo = 1341;
+            item.useAmmo = 40;
         }
 
         public override void AddRecipes()  //How to craft this gun
@@ -35,6 +35,10 @@ namespace Console_Port_Mod.Items
             recipe.AddTile(TileID.WorkBenches);   //at work bench
             recipe.SetResult(this);
             recipe.AddRecipe();
+
+        }
+        public override void Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+        {
 
         }
 
