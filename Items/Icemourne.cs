@@ -32,7 +32,7 @@ namespace Console_Port_Mod.Items
 			recipe.AddIngredient(ItemID.IceBlade, 1);
             recipe.AddIngredient(ItemID.IceFeather, 10);
             recipe.AddIngredient(ItemID.IceSickle, 1);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
